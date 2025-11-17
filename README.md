@@ -62,7 +62,7 @@ An example ``AutoAttack`` macro:
 /startattack
 ```
 
-My ``Untimed`` macro:
+An example ``Untimed`` macro:
 ```
 #showtooltip
 /stopmacro [noharm] [harm, dead] [stealth]
