@@ -71,19 +71,30 @@ My ``Untimed`` macro:
 /x
 ```
 
-An example ``Timed`` macro:
+An example simple ``Timed`` macro (spells w/ no global cooldown):
 ```
 #showtooltip
 /stopmacro [noharm] [harm, dead]
 /x
-/castsequence reset=0 0,0,0,Exorcism
-/castsequence reset=0 0,0,Crusader Strike
-/castsequence reset=0 0,Divine Storm
-/castsequence reset=0 Judgement of Wisdom
+/cast Spell A
+/cast Spell B
+/cast Spell C
+/cast Spell D
+/x
+
+An example advanced ``Timed`` macro (spells w/ global cooldown):
+```
+#showtooltip
+/stopmacro [noharm] [harm, dead]
+/x
+/castsequence reset=0 0,0,0,Spell A
+/castsequence reset=0 0,0,Spell B
+/castsequence reset=0 0,Spell C
+/castsequence reset=0 Spell D
 /x
 ```
 
-This ``castsequence`` trick is the key to making the game always cast that ability when it's available.  The reason this technique is necessary has to do w/ trying to cast spells that trigger a global cooldown.  I learned about this technique on a private server forum [post](https://forum.warmane.com/showthread.php?t=382668&page=4).
+This ``castsequence`` is only required when using spells that trigger a global cooldown, bc that cooldown will prevent subsequent spells from being cast.  I learned about this technique on a private server forum [post](https://forum.warmane.com/showthread.php?t=382668&page=4).
 
 ## Issues To Know
 
