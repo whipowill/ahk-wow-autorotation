@@ -48,14 +48,14 @@ This is secret to the madness.  Now that you have AHK setup and working, you can
 - ``Untimed`` - for casting your untimed, spammable skills
 - ``Timed`` - for casting your timed, cooldown skills
 
-My ``AutoTarget`` macro:
+An example ``AutoTarget`` macro:
 ```
 /stopmacro [mounted] [nocombat] [stealth]
 /targetenemy [noexists] [dead]
 /assist [@focus]
 ```
 
-My ``AutoAttack`` macro:
+An example ``AutoAttack`` macro:
 ```
 /stopmacro [notarget] [noharm] [harm, dead] [stealth]
 /run UIErrorsFrame:Hide()
@@ -67,7 +67,7 @@ My ``Untimed`` macro:
 #showtooltip
 /stopmacro [noharm] [harm, dead] [stealth]
 /x
-/castsequence reset=target Claw, Claw, Claw, Ferocious Bite
+/castsequence reset=target Spell A, Spell B, Spell C, Spell D
 /x
 ```
 
@@ -81,6 +81,7 @@ An example simple ``Timed`` macro (spells w/ no global cooldown):
 /cast Spell C
 /cast Spell D
 /x
+```
 
 An example advanced ``Timed`` macro (spells w/ global cooldown):
 ```
