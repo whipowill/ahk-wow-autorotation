@@ -9,13 +9,6 @@
 
 is_active := 0
 
-; reset any icons
-splashimage 1:, B W0 H0 X0 Y0
-splashimage 2:, B W0 H0 X0 Y0
-splashimage 3:, B W0 H0 X0 Y0
-splashimage 4:, B W0 H0 X0 Y0
-splashimage 5:, B W0 H0 X0 Y0
-
 ; show script is running
 splashimage 1:, B W5 H5 X0 Y0 CWRed
 
@@ -53,16 +46,12 @@ PgUp::
     if (is_active)
     {
         SetTimer, AutoRotation, 500
-        splashimage 2:, B W5 H5 X5 Y0 CWGreen
-
-        SetTimer, MinuteCommand, 60000
+        splashimage 1:, B W5 H5 X0 Y0 CWGreen
     }
     else
     {
         SetTimer, AutoRotation, Off
-        splashimage 2:, B W0 H0 X0 Y0
-
-        SetTimer, MinuteCommand, Off
+        splashimage 1:, B W5 H5 X0 Y0 CWRed
     }
 return
 
@@ -104,14 +93,11 @@ End::
     MouseGetPos X, Y
     PixelGetColor getColor, %X%, %Y%, RGB
     colorFind = %getColor%
-
-    colorShow := RegExReplace(colorFind, "0x", "")
-    splashimage 5:, B W5 H5 X5 Y5 CW%colorShow%
 return
 
 Home::
     is_fishing_active := 1
-    splashimage 4:, B W5 H5 X0 Y5 CWBlue
+    splashimage 1:, B W5 H5 X0 Y0 CWBlue
     loop
     {
         if (((A_Tickcount - timer) / 1000) >= (60 * runtime))
