@@ -107,6 +107,7 @@ This ``castsequence`` is only required when using spells that trigger a global c
 
 - [WowGaming Guide On Making A Macro](https://wowgaming.github.io/wiki-en/wotlk-making-a-macro.html) - WOTLK rules
 - [AutoHotKey List Of Keys](https://www.autohotkey.com/docs/KeyList.htm)
+- [Will Scarlet's NoShift Druid Addon](https://github.com/whipowill/wow-addon-noshift) - awesome combo w/ this
 
 ## Credits
 
