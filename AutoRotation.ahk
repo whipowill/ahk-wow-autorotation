@@ -17,7 +17,7 @@ is_fishing_active := 0
 
 runtime := 15
 
-colorFind := "0xFFEAF6" ; 0x450C0B, 0xFAE6E6, 0xFFEAF6
+colorFind := "0x22276D" ; dark blue of feather on bobber?
 colorVariation := 5
 delta := 15
 
@@ -93,6 +93,7 @@ End::
     MouseGetPos X, Y
     PixelGetColor getColor, %X%, %Y%, RGB
     colorFind = %getColor%
+    ;MsgBox, Color (RGB): %colorFind%
 return
 
 Home::

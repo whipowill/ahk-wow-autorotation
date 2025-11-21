@@ -103,6 +103,16 @@ This ``castsequence`` is only required when using spells that trigger a global c
 
 - Some spells don't have a cooldown, but you don't want to cast them every second.  An example might be a Hunter DoT or a Warrior bleed.  You either have to add the spell to a macro with a ``castsequence``, or you just need to apply it manually w/ buttons 1-6 and leave it out of automatic rotation.
 
+## Fishing Mode
+
+If you press ``Home`` you can switch the auto click into fishing mode and it will change the pixel from red to blue.
+
+You need to be zoomed in on the screen all the way, facing the water, with your fishing skill in the ``1`` slot on your action bar.
+
+When you see your bobber, hover over the darkest blue part of the bobber feathers and press ``End``, which will mark that color and scan for motion.
+
+It won't work perfectly 100% of the time, but it work pretty well.  This fishing mode will turn off after 15 minutes.
+
 ## External Links
 
 - [WowGaming Guide On Making A Macro](https://wowgaming.github.io/wiki-en/wotlk-making-a-macro.html) - WOTLK rules
