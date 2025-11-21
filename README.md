@@ -107,9 +107,9 @@ This ``castsequence`` is only required when using spells that trigger a global c
 
 If you press ``Home`` you can switch the auto click into fishing mode.
 
-You need to be zoomed in on the water all the way with your fishing rod equipped and your fishing skill in the ``1`` slot on your action bar.  Hover over the darkest blue part of the bobber feathers and press the ``End``, which will mark that color and scan for motion.
+You need to be zoomed in on the water all the way with your fishing rod equipped and your fishing skill in the ``1`` slot on your action bar.  Hover over the darkest blue part of the bobber feathers and press ``End``, which will log that color and scan for motion.
 
-It doesn't work perfectly, but it works pretty well.  This mode will turn off after 15 minutes.
+It doesn't work perfectly, but it works pretty well.  This mode will turn off after 15 minutes.  Press ``PgDown`` to reset the script and ``PgUp`` to go back to auto rotation.
 
 ## External Links
 
