@@ -105,13 +105,11 @@ This ``castsequence`` is only required when using spells that trigger a global c
 
 ## Fishing Mode
 
-If you press ``Home`` you can switch the auto click into fishing mode and it will change the pixel from red to blue.
+If you press ``Home`` you can switch the auto click into fishing mode.
 
-You need to be zoomed in on the screen all the way, facing the water, with your fishing skill in the ``1`` slot on your action bar.
+You need to be zoomed in on the water all the way with your fishing rod equipped and your fishing skill in the ``1`` slot on your action bar.  Hover over the darkest blue part of the bobber feathers and press the ``End``, which will mark that color and scan for motion.
 
-When you see your bobber, hover over the darkest blue part of the bobber feathers and press ``End``, which will mark that color and scan for motion.
-
-It won't work perfectly 100% of the time, but it work pretty well.  This fishing mode will turn off after 15 minutes.
+It doesn't work perfectly, but it works pretty well.  This mode will turn off after 15 minutes.
 
 ## External Links
 
